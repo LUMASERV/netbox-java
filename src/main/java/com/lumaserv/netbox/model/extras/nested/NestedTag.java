@@ -1,8 +1,10 @@
 package com.lumaserv.netbox.model.extras.nested;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class NestedTag {
 
     Integer id;

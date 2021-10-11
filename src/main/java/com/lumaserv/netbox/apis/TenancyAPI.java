@@ -19,8 +19,24 @@ public class TenancyAPI {
         return client.apiRequest("GET", "/tenancy/tenant-groups/", query, null, ListResponse.class).getResults(TenantGroup.class);
     }
 
+    public TenantGroup getTenantGroup(int id) throws NetBoxAPIException {
+        return client.apiRequest("GET", "/tenancy/tenant-groups/" + id + "/", null, null, TenantGroup.class);
+    }
+
+    public void deleteTenantGroup(int id) throws NetBoxAPIException {
+        client.apiRequest("DELETE", "/tenancy/tenant-groups/" + id + "/", null, null, null);
+    }
+
     public List<Tenant> getTenants(DefaultQuery query) throws NetBoxAPIException {
         return client.apiRequest("GET", "/tenancy/tenants/", query, null, ListResponse.class).getResults(Tenant.class);
+    }
+
+    public Tenant getTenant(int id) throws NetBoxAPIException {
+        return client.apiRequest("GET", "/tenancy/tenants/" + id + "/", null, null, Tenant.class);
+    }
+
+    public void deleteTenant(int id) throws NetBoxAPIException {
+        client.apiRequest("DELETE", "/tenancy/tenants/" + id + "/", null, null, null);
     }
 
 }

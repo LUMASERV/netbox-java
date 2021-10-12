@@ -1,4 +1,4 @@
-package com.lumaserv.netbox.model.dcim;
+package com.lumaserv.netbox.model.extras;
 
 import com.lumaserv.netbox.model.LabeledString;
 import com.lumaserv.netbox.model.users.nested.NestedUser;

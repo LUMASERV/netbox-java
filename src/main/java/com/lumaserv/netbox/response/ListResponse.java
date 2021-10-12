@@ -19,7 +19,7 @@ public class ListResponse {
 
     public <T> List<T> getResults(Class<T> type) {
         List<T> list = new ArrayList<>();
-        for(AbstractElement e : results)
+        for (AbstractElement e : results)
             list.add(MAPPER.fromAbstract(e, type));
         return list;
     }

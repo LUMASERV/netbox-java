@@ -2,7 +2,6 @@ package com.lumaserv.netbox;
 
 import com.lumaserv.netbox.model.tenancy.Tenant;
 import com.lumaserv.netbox.model.tenancy.writable.WritableTenant;
-import com.lumaserv.netbox.query.DefaultQuery;
 
 public class Test {
 

@@ -17,9 +17,9 @@ public class NetBoxClient extends HTTPClient {
     VirtualizationAPI virtualizationAPI = new VirtualizationAPI(this);
 
     public NetBoxClient(String url, String token) {
-        if(url.endsWith("/"))
+        if (url.endsWith("/"))
             url = url.substring(0, url.length() - 1);
-        if(!url.endsWith("/api"))
+        if (!url.endsWith("/api"))
             url += "/api";
         setBaseUrl(url);
         header("Accept", "application/json");
@@ -56,11 +56,11 @@ public class NetBoxClient extends HTTPClient {
 
     public <T> T apiRequest(String method, String path, Object query, Object request, Class<T> type) throws NetBoxAPIException {
         HTTPRequest r = request(method, path);
-        if(request != null)
+        if (request != null)
             r.jsonBody(request);
-        if(r.status() < 200 || r.status() >= 300)
+        if (r.status() < 200 || r.status() >= 300)
             throw new NetBoxAPIException(r);
-        if(type == null)
+        if (type == null)
             return null;
         return r.object(type);
     }

@@ -1,8 +1,10 @@
 package com.lumaserv.netbox.model.extras;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class Tag {
 
     Integer id;

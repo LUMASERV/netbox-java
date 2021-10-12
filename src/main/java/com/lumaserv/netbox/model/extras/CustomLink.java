@@ -1,8 +1,10 @@
-package com.lumaserv.netbox.model.dcim;
+package com.lumaserv.netbox.model.extras;
 
 import lombok.Getter;
+import lombok.Setter;
 
 @Getter
+@Setter
 public class CustomLink {
 
     Integer id;

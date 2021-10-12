@@ -1,28 +1,23 @@
-package com.lumaserv.netbox.model.dcim;
+package com.lumaserv.netbox.model.extras.writable;
 
 import com.google.gson.annotations.SerializedName;
-import com.lumaserv.netbox.model.LabeledString;
-import lombok.Getter;
+import lombok.Setter;
 
-@Getter
-public class CustomField {
+@Setter
+public class WritableCustomField {
 
-    Integer id;
-    String url;
-    String display;
     String[] contentTypes;
-    LabeledString type;
     String name;
     String label;
     String description;
     Boolean required;
-    LabeledString filterLogic;
+    String filterLogic;
     @SerializedName("default")
-    String defaultValue;
+    String isDefault;
     Integer weight;
     Integer validationMinimum;
     Integer validationMaximum;
     String validationRegex;
-    String[] choices;
+    String choices;
 
 }

@@ -1,11 +1,13 @@
-package com.lumaserv.netbox.model.dcim;
+package com.lumaserv.netbox.model.extras;
 
 import lombok.Getter;
+import lombok.Setter;
 import org.javawebstack.abstractdata.AbstractObject;
 
 import java.util.Date;
 
 @Getter
+@Setter
 public class ImageAttachment {
 
     Integer id;

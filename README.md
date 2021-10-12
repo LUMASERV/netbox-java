@@ -5,10 +5,10 @@ NetBox API Client for Java
 ## Usage
 
 ```java
-NetBoxClient client=new NetBoxClient("https://netbox.example.com","mysupersecureapitoken");
-        client.dcim().getRacks(new RackQuery()).forEach(rack->{
-        System.out.println(rack.getName());
-        });
+NetBoxClient client = new NetBoxClient("https://netbox.example.com", "mysupersecureapitoken");
+client.dcim().getRacks(new DefaultQuery()).forEach(rack -> {
+    System.out.println(rack.getName());
+});
 ```
 
 ## Maven

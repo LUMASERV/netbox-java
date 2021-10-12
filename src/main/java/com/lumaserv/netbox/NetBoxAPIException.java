@@ -9,7 +9,7 @@ public class NetBoxAPIException extends Exception {
     final HTTPRequest request;
 
     public NetBoxAPIException(HTTPRequest request) {
-        super("Error " + request.status());
+        super("Error " + request.status() + ": " + request.string());
         this.request = request;
     }
 

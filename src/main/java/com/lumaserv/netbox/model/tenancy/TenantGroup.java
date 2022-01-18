@@ -1,6 +1,5 @@
 package com.lumaserv.netbox.model.tenancy;
 
-import com.google.gson.annotations.SerializedName;
 import com.lumaserv.netbox.model.tenancy.nested.NestedTenantGroup;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;

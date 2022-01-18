@@ -1,6 +1,5 @@
 package com.lumaserv.netbox.model.extras.writable;
 
-import com.google.gson.annotations.SerializedName;
 import lombok.Setter;
 import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 

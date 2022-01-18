@@ -1,6 +1,5 @@
 package com.lumaserv.netbox.model.circuits;
 
-import com.google.gson.annotations.SerializedName;
 import com.lumaserv.netbox.model.circuits.nested.NestedCircuit;
 import com.lumaserv.netbox.model.circuits.nested.NestedProviderNetwork;
 import com.lumaserv.netbox.model.dcim.nested.NestedCable;

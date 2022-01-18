@@ -1,6 +1,5 @@
 package com.lumaserv.netbox.model.dcim;
 
-import com.google.gson.annotations.SerializedName;
 import com.lumaserv.netbox.model.dcim.nested.NestedRegion;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;

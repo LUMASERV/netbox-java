@@ -2,6 +2,7 @@ package com.lumaserv.netbox.model.tenancy.nested;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 @Getter
 public class NestedTenantGroup {
@@ -12,7 +13,7 @@ public class NestedTenantGroup {
     String name;
     String slug;
     Integer tenantCount;
-    @SerializedName("_depth")
+    @MapperOptions(name = "_depth")
     Integer depth;
 
 }

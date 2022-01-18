@@ -7,6 +7,7 @@ import com.lumaserv.netbox.model.dcim.nested.NestedCable;
 import com.lumaserv.netbox.model.dcim.nested.NestedSite;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 @Getter
 public class CircuitTermination {
@@ -27,7 +28,7 @@ public class CircuitTermination {
     NestedCable cable;
     AbstractObject cablePeer;
     String cablePeerType;
-    @SerializedName("_occupied")
+    @MapperOptions(name = "_occupied")
     Boolean occupied;
 
 }

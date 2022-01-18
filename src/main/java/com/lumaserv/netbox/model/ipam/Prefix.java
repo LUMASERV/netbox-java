@@ -11,6 +11,7 @@ import com.lumaserv.netbox.model.ipam.nested.NestedVRF;
 import com.lumaserv.netbox.model.tenancy.nested.NestedTenant;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 import java.util.Date;
 
@@ -36,7 +37,7 @@ public class Prefix {
     Date created;
     Date lastUpdated;
     Integer children;
-    @SerializedName("_depth")
+    @MapperOptions(name = "_depth")
     Integer depth;
 
 }

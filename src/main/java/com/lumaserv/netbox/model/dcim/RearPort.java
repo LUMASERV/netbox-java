@@ -7,6 +7,7 @@ import com.lumaserv.netbox.model.dcim.nested.NestedDevice;
 import com.lumaserv.netbox.model.extras.nested.NestedTag;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 import java.util.Date;
 
@@ -31,7 +32,7 @@ public class RearPort {
     AbstractObject customFields;
     Date created;
     Date lastUpdated;
-    @SerializedName("_occupied")
+    @MapperOptions(name = "_occupied")
     Boolean occupied;
 
 }

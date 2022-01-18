@@ -6,6 +6,7 @@ import com.lumaserv.netbox.model.dcim.nested.NestedManufacturer;
 import com.lumaserv.netbox.model.extras.nested.NestedTag;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 import java.util.Date;
 
@@ -29,7 +30,7 @@ public class InventoryItem {
     AbstractObject customFields;
     Date created;
     Date lastUpdated;
-    @SerializedName("_depth")
+    @MapperOptions(name = "_depth")
     Integer depth;
 
 }

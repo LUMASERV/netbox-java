@@ -2,6 +2,7 @@ package com.lumaserv.netbox.model.dcim.nested;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 @Getter
 public class NestedLocation {
@@ -12,7 +13,7 @@ public class NestedLocation {
     String name;
     String slug;
     Integer rackCount;
-    @SerializedName("_depth")
+    @MapperOptions(name = "_depth")
     Integer depth;
 
 }

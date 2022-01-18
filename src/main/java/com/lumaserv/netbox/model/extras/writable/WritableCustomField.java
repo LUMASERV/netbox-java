@@ -2,6 +2,7 @@ package com.lumaserv.netbox.model.extras.writable;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Setter;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 @Setter
 public class WritableCustomField {
@@ -12,7 +13,7 @@ public class WritableCustomField {
     String description;
     Boolean required;
     String filterLogic;
-    @SerializedName("default")
+    @MapperOptions(name = "default")
     String isDefault;
     Integer weight;
     Integer validationMinimum;

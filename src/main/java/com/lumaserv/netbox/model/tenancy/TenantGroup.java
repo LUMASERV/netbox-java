@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 import com.lumaserv.netbox.model.tenancy.nested.NestedTenantGroup;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 import java.util.Date;
 
@@ -20,7 +21,7 @@ public class TenantGroup {
     Date created;
     Date lastUpdated;
     Integer tenantCount;
-    @SerializedName("_depth")
+    @MapperOptions(name = "_depth")
     Integer depth;
 
 }

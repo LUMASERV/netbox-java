@@ -2,6 +2,7 @@ package com.lumaserv.netbox.model.dcim.nested;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Getter;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 @Getter
 public class NestedPowerPort {
@@ -12,7 +13,7 @@ public class NestedPowerPort {
     NestedDevice device;
     String name;
     Integer cable;
-    @SerializedName("_occupied")
+    @MapperOptions(name = "_occupied")
     String occupied;
 
 }

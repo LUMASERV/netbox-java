@@ -3,6 +3,7 @@ package com.lumaserv.netbox.model.extras;
 import com.google.gson.annotations.SerializedName;
 import com.lumaserv.netbox.model.LabeledString;
 import lombok.Getter;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 @Getter
 public class CustomField {
@@ -17,7 +18,7 @@ public class CustomField {
     String description;
     Boolean required;
     LabeledString filterLogic;
-    @SerializedName("default")
+    @MapperOptions(name = "default")
     String defaultValue;
     Integer weight;
     Integer validationMinimum;

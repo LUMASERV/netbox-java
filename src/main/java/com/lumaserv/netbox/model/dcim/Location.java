@@ -5,6 +5,7 @@ import com.lumaserv.netbox.model.dcim.nested.NestedLocation;
 import com.lumaserv.netbox.model.dcim.nested.NestedSite;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 import java.util.Date;
 
@@ -24,7 +25,7 @@ public class Location {
     Date lastUpdated;
     Integer rackCount;
     Integer deviceCount;
-    @SerializedName("_depth")
+    @MapperOptions(name = "_depth")
     Integer depth;
 
 }

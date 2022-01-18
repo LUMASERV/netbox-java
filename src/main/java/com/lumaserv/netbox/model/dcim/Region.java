@@ -4,6 +4,7 @@ import com.google.gson.annotations.SerializedName;
 import com.lumaserv.netbox.model.dcim.nested.NestedRegion;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 import java.util.Date;
 
@@ -21,7 +22,7 @@ public class Region {
     Date created;
     Date lastUpdated;
     Integer siteCount;
-    @SerializedName("_depth")
+    @MapperOptions(name = "_depth")
     Integer depth;
 
 }

@@ -9,6 +9,7 @@ import com.lumaserv.netbox.model.extras.nested.NestedTag;
 import com.lumaserv.netbox.model.ipam.nested.NestedVLAN;
 import lombok.Getter;
 import org.javawebstack.abstractdata.AbstractObject;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 import java.util.Date;
 
@@ -44,7 +45,7 @@ public class Interface {
     Date created;
     Date lastUpdated;
     Integer countIpaddresses;
-    @SerializedName("_occupied")
+    @MapperOptions(name = "_occupied")
     Boolean occupied;
 
 }

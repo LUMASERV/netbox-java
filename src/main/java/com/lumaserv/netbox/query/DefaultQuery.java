@@ -2,31 +2,32 @@ package com.lumaserv.netbox.query;
 
 import com.google.gson.annotations.SerializedName;
 import lombok.Setter;
+import org.javawebstack.abstractdata.mapper.annotation.MapperOptions;
 
 @Setter
 public class DefaultQuery {
 
-    @SerializedName("q")
+    @MapperOptions(name = "q")
     String query;
-    @SerializedName("id__n")
+    @MapperOptions(name = "id__n")
     String idN;
-    @SerializedName("id__lte")
+    @MapperOptions(name = "id__lte")
     String idLTE;
-    @SerializedName("id__lt")
+    @MapperOptions(name = "id__lt")
     String idLT;
-    @SerializedName("id__gte")
+    @MapperOptions(name = "id__gte")
     String idGTE;
-    @SerializedName("id__gt")
+    @MapperOptions(name = "id__gt")
     String idGT;
     String created;
-    @SerializedName("created__gte")
+    @MapperOptions(name = "created__gte")
     String createdGTE;
-    @SerializedName("created__lte")
+    @MapperOptions(name = "created__lte")
     String createdLTE;
     String lastUpdated;
-    @SerializedName("last_updated__gte")
+    @MapperOptions(name = "last_updated__gte")
     String lastUpdatedGTE;
-    @SerializedName("last_updated__lte")
+    @MapperOptions(name = "last_updated__lte")
     String lastUpdatedLTE;
     Integer limit;
     Integer offset;
